@@ -1,2 +1,2 @@
 let timeElement = document.querySelector("#time");
-timeElement.textContent = (new Date()).toISOString();
+timeElement.textContent = (new Date()).toLocaleString();
