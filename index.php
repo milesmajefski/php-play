@@ -36,10 +36,10 @@
         </tr>
         <?php foreach ($conn->query($sql) as $row) { ?>
             <tr>
-                <td><?php $row["id"] ?></td>
-                <td><?php $row["firstname"] ?></td>
-                <td><?php $row["username"] ?></td>
-                <td><?php $row["email"] ?></td>
+                <td><?php print $row["id"] ?></td>
+                <td><?php print $row["firstname"] ?></td>
+                <td><?php print $row["username"] ?></td>
+                <td><?php print $row["email"] ?></td>
             </tr>
         <?php } ?>
     </table>
