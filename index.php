@@ -6,8 +6,13 @@
     $now = date("Y-m-d h:i:sa");
     echo "Hello, the php time is: $now";
 
+    $servername = "klbcedmmqp7w17ik.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306";
+    $username = "jomlra4mx6o34szs";
+    $password = "c3rbhwu3evlxstlr";
+    $dbname = "km6p8bs78qpiul1k";
+
     try {
-        $conn = new PDO("mysql://jomlra4mx6o34szs:c3rbhwu3evlxstlr@klbcedmmqp7w17ik.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/km6p8bs78qpiul1k");
+        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         echo "DB connected.";
     } catch (PDOException $e) {
