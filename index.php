@@ -38,7 +38,7 @@
             <tr>
                 <td><?php print $row["id"] ?></td>
                 <td><?php print $row["firstname"] ?></td>
-                <td><?php print $row["username"] ?></td>
+                <td><?php print $row["lastname"] ?></td>
                 <td><?php print $row["email"] ?></td>
             </tr>
         <?php } ?>
