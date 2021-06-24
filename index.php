@@ -3,6 +3,13 @@
 <html>
 
 <head>
+<?php
+
+$now = date("Y-m-d h:i:sa");
+echo "Hello, the time is: $now";
+echo phpinfo();
+?>
+
 </head>
 
 <body>
@@ -13,9 +20,3 @@
 </html>
 
 
-<?php
-
-$now = date("Y-m-d h:i:sa");
-echo "Hello, the time is: $now";
-echo phpinfo();
-?>
